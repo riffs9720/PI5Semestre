@@ -1,0 +1,11 @@
+.pi-background-form{
+    background: white;
+
+}
+
+.form-control:focus {
+    border-color: #FF4500;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }

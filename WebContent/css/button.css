@@ -1,0 +1,71 @@
+
+
+.pi-btnAtualizar{
+    background: #2f7aef;
+    border: none;
+    color:white;
+
+}
+
+
+
+.pi-btnIniciar{
+    background: #3ec4e6;
+    color: #fff;
+    border:none;
+    width: 55px;
+    
+  } 
+  .pi-btnParar {
+    background: #bb2a3d;
+    color: #fff;
+    border:none;
+    width: 55px;
+  } 
+
+  .pi-btnOpcoes{
+    background: #cc3700;
+    color: #fff;
+    border:none;
+    /* width: 100px; */
+
+  }
+
+  .pi-btn{
+    
+    /* border-radius: 30px; */
+    border-color:#FF4500;
+    color:#FF4500;
+    background-color: transparent;
+    
+}
+
+.pi-btn:hover{
+    border-color:#FF4500;
+    color:white;
+    background-color: #FF4500;
+
+}
+
+.pi-btnSair {
+    background: #fff;
+    color: #44007F;
+}
+  
+.pi-btnVoltar{
+    background:transparent;
+    color: #999;
+    
+}
+
+.pi-btnEnviar{
+    background-color:#747a77;
+    color: #fff;
+}
+
+.pi-btnComentario{
+    background-color:#fff;
+    color: #747a77;
+    border-color:transparent;
+    
+}

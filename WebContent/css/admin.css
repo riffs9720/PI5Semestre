@@ -1,0 +1,561 @@
+
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    perspective: 1500px;
+}
+
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    /* background: linear-gradient(to bottom, #670d10, #092756);  */
+    background: #cc3700;
+    color: #fff;
+    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
+    transform-origin: bottom left;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+    transform: rotateY(100deg);
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    /* background: linear-gradient(to bottom, #670d10, #092756);  */
+}
+.pi-bg-orange{
+    background: #670d10;
+}
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.components-top {
+    padding: 20px 0;
+    border-top: 1px solid #fff;
+}
+
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #a73337;
+    background: #fff;}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #a73337;
+    background: #fff;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #670d10;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+a.pi-white {
+    background: #fff;
+    color: #670d10;
+}
+
+
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+#sidebarCollapse {
+    width: 40px;
+    height: 40px;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+#sidebarCollapse span {
+    width: 80%;
+    height: 2px;
+    margin: 0 auto;
+    display: block;
+    background: #555;
+    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+    transition-delay: 0.2s;
+}
+
+#sidebarCollapse span:first-of-type {
+    transform: rotate(45deg) translate(2px, 2px);
+}
+#sidebarCollapse span:nth-of-type(2) {
+    opacity: 0;
+}
+#sidebarCollapse span:last-of-type {
+    transform: rotate(-45deg) translate(1px, -1px);
+}
+
+
+#sidebarCollapse.active span {
+    transform: none;
+    opacity: 1;
+    margin: 5px auto;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+        transform: rotateY(90deg);
+    }
+    #sidebar.active {
+        margin-left: 0;
+        transform: none;
+    }
+    #sidebarCollapse span:first-of-type,
+    #sidebarCollapse span:nth-of-type(2),
+    #sidebarCollapse span:last-of-type {
+        transform: none;
+        opacity: 1;
+        margin: 5px auto;
+    }
+    #sidebarCollapse.active span {
+        margin: 0 auto;
+    }
+    #sidebarCollapse.active span:first-of-type {
+        transform: rotate(45deg) translate(2px, 2px);
+    }
+    #sidebarCollapse.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    #sidebarCollapse.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+
+}
+
+
+
+
+
+.pi-footer{
+    /* background-color: #FF4500; */
+    height: 5%;
+    background: transparent;
+    
+    font-size:11px;
+    
+  
+ 
+   
+
+}
+
+.pi-btnEnviar{
+    background: #092756;
+    border: none;
+    color:white;
+    width: 55px;
+
+}
+
+.pi-btnAtualizar{
+    background: #2f7aef;
+    border: none;
+    color:white;
+
+}
+
+.pi-primary{
+    color: #cc3700;
+   
+}
+
+.pi-btnIniciar{
+    background: #3ec4e6;
+    color: #fff;
+    border:none;
+    width: 55px;
+    
+  } 
+  .pi-btnParar {
+    background: #bb2a3d;
+    color: #fff;
+    border:none;
+    width: 55px;
+  } 
+
+  .pi-btnOpcoes{
+    background: #cc3700;
+    color: #fff;
+    border:none;
+    /* width: 100px; */
+
+  }
+  .pi-emAndamento{
+    background: #f0ad4e;
+    color:#fff;
+  }
+  
+  .pi-naoIniciado{
+ 
+    background: #d9534f;
+      color:#fff;
+  }
+  
+  .pi-finalizado {
+      background: #5cb85c;
+      color:#fff;
+  }
+
+
+  /****login**/
+  .pi-container{
+    height: 100vh !important;
+ 
+   
+    
+}
+  .pi-btn{
+    
+    /* border-radius: 30px; */
+    border-color:#FF4500;
+    color:#FF4500;
+    background-color: transparent;
+    
+}
+
+.pi-primary{
+    color:#FF4500;
+
+}
+
+.pi-btn:hover{
+    border-color:#FF4500;
+    color:white;
+    background-color: #FF4500;
+
+}
+
+.pi-border-box-shadow{
+    border: 1px  solid rgba(0,0,0,0.2);
+    padding: 10px;
+    /* box-shadow: 10px 10px 10px  rgba(0,0,0,0.2) */
+
+   
+}
+.pi-background-primary{
+    background-color: #FF4500
+    ;
+    
+
+    
+   
+}
+
+
+.container-color{
+    
+    /* background: -webkit-linear-gradient(to bottom,  #670d10, #092756);  
+    background: linear-gradient(to bottom, #670d10, #092756); */
+    background: rgb(243, 240, 240);
+
+} 
+.pi-background-form{
+    background: white;
+
+}
+
+.form-control:focus {
+    border-color: #FF4500;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .pi-text-status{
+    font-size:12px;
+  
+  }
+  .pi-btnSair {
+    background: #fff;
+    color: #670d10;
+}
+  
+.pi-btnVoltar{
+    background:transparent;
+    color: #999;
+    
+}
+
+.pi-bg-primary{
+    background:#f96c39;
+    color: #fff;
+}
+
+.pi-btnEnviar{
+    background-color:#747a77;
+    color: #fff;
+}
+.pi-btnComentario{
+    background-color:#fff;
+    color: #747a77;
+    border-color:transparent;
+    
+}
+
+.pi-hr-color{
+    background: #aaaaaa;
+}
+.pi-text-black{
+    color:black;
+}
+
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: rgb(54, 168, 63); /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+}
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    /* -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+} */
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+/***card****/
+.card {
+  padding-top: 20px;
+  margin: 10px 0 20px 0;
+  background-color: #ffffff;
+  border: 1px solid #d8d8d8;
+  border-top-width: 0;
+  border-bottom-width: 2px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.card.hovercard {
+  position: relative;
+  /* width: 400px; */
+  padding-top: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* .card.hovercard img {
+  width: 300px;
+  height: 200px;
+} */
+
+.card.hovercard .avatar {
+  position: relative;
+  top: -40px;
+  margin-bottom: -40px;
+}
+
+.card.hovercard .avatar img {
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.card.hovercard .info {
+  padding: 4px 8px 10px;
+}
+
+.card.hovercard .info .title {
+  margin-bottom: 4px;
+  font-size: 24px;
+  line-height: 1;
+  color: #262626;
+  vertical-align: middle;
+}
+
+.card.hovercard .info .desc {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  color: #737373;
+  text-overflow: ellipsis;
+}
+
+.card.hovercard .bottom {
+  padding: 0 20px;
+  margin-bottom: 17px;
+}
+
+.card.people .card-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  line-height: 29px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pi-textSize-analista{
+    font-size: 25px;
+}
+
+.pi-background-laranjaEscuro{
+    background:#2f7aef;
+}
+
+/* CALENDARIO */
+/* .table-style .today {background: #2A3F54; color: #ffffff;}
+.table-style th:nth-of-type(7),td:nth-of-type(7) {color: blue;}
+.table-style th:nth-of-type(1),td:nth-of-type(1) {color: red;}
+.table-style tr:first-child th{background-color:#F6F6F6; text-align:center; font-size: 15px;} */
